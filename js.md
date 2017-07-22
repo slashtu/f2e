@@ -61,7 +61,23 @@ function sum(a, a, c) { // !!! syntax error
 }
 ```
 
-#### 3. implement Singleton Design Pattern
+#### 3. Implement Singleton Design Pattern
+#### 4. How to check nested objecct properties
+1) immutable.js 
+2) loadash get api
+3) You can use an utility function like this:
+
+```
+get = function(obj, key) {
+    return key.split(".").reduce(function(o, x) {
+        return (typeof o == "undefined" || o === null) ? o : o[x];
+    }, obj);
+}
+
+// Usage
+ get(user, 'loc.lat')     // 50
+ get(user, 'loc.foo.bar') // undefined
+```
 
 References
 1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
