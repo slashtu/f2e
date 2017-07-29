@@ -2,41 +2,41 @@
 
 Classical
 
-```javscript
-  function inherit(C, P){
-      var F = function(){};
-      F.prototype = P.prototype;
-      C.prototype = new F();
-      C.prototype.constructor = C;
-  }
+```javascript
+function inherit(C, P){
+    var F = function(){};
+    F.prototype = P.prototype;
+    C.prototype = new F();
+    C.prototype.constructor = C;
+}
 
-  function Parent(){ this.name = 'dad'}
-  function Child(){ this.name = 'son'}
+function Parent(){ this.name = 'dad'}
+function Child(){ this.name = 'son'}
 
-  inherit(Child, Parent)
+inherit(Child, Parent)
 
-  var c = new Child()
-  var p = new Parent()
-  ```
-  
+var c = new Child()
+var p = new Parent()
+```
+
 ES5
 
-  ```javscript
-  function Parent(){ this.name = "dad" }
-  function Child(){ this.name = "child" }
-  
-  Child.prototype = Object.create(Parent.prototype)
-  Child.prototype.constructor = Child
+```javascript
+function Parent(){ this.name = "dad" }
+function Child(){ this.name = "child" }
 
-  var c = new Child()
-  var p = new Parent()
-  ```
-  
+Child.prototype = Object.create(Parent.prototype)
+Child.prototype.constructor = Child
+
+var c = new Child()
+var p = new Parent()
+```
+
 Es6
 
-  ```javascript
-  class Child extends Parent
-  ```
+```javascript
+class Child extends Parent
+```
 
 #### 2. What is strict mode**
 
@@ -48,7 +48,6 @@ Strict mode treats these mistakes as errors so that they're discovered and promp
 babel-plubin: https://babeljs.io/docs/plugins/transform-strict-mode/
 
 ```javascript
-
 'use strict';
 
 mistypeVariable = 17; // accidentally create global variables
@@ -59,10 +58,27 @@ delete Object.prototype; // delete undeletable properties
 function sum(a, a, c) { // !!! syntax error
   return a + b + c; // wrong if this code ran
 }
-
 ```
 
 #### 3. Implement Singleton Design Pattern
+
+ES6
+
+```javascript
+let instance = null;
+
+class Cache{
+  constructor() {
+    if(!instance){
+      instance = this;
+    }
+
+    // to test whether we have singleton or not
+    this.time = new Date()
+    return instance;
+  }
+}
+```
 
 #### 4. How to check nested objecct properties
 
@@ -71,7 +87,6 @@ function sum(a, a, c) { // !!! syntax error
 * You can use an utility function like this:
 
 ```javascript
-
 get = function(obj, key) {
     return key.split(".").reduce(function(o, x) {
         return (typeof o == "undefined" || o === null) ? o : o[x];
@@ -81,13 +96,11 @@ get = function(obj, key) {
 // Usage
  get(user, 'loc.lat')     // 50
  get(user, 'loc.foo.bar') // undefined
-
 ```
 
-#### 5. Explain Function.prototype.call()
+#### 5. When to Use Function.prototype.call()
 
 ```javascript
-
 const map = f => x => Array.prototype.map.call(x, f)
 
 const items = document.querySelectorAll('div')
@@ -95,12 +108,11 @@ const items = document.querySelectorAll('div')
 items.map(doSomething)
 // => Uncaught TypeError: items.map is not a function
 // document.querySelectorAll (and similar methods) do not return an Array, 
-//they return a NodeList and a NodeList does not contain a 
+// they return a NodeList and a NodeList does not contain a 
 // map method.
 
 // function programing
 map(doSomething)(items)
-
 ```
 
 References
