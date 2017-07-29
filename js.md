@@ -2,26 +2,26 @@
 
 Classical
 
-  ```
+```javscript
   function inherit(C, P){
       var F = function(){};
       F.prototype = P.prototype;
       C.prototype = new F();
       C.prototype.constructor = C;
   }
-  
+
   function Parent(){ this.name = 'dad'}
   function Child(){ this.name = 'son'}
-  
+
   inherit(Child, Parent)
-  
+
   var c = new Child()
   var p = new Parent()
   ```
   
 ES5
 
-  ```
+  ```javscript
   function Parent(){ this.name = "dad" }
   function Child(){ this.name = "child" }
   
@@ -34,7 +34,7 @@ ES5
   
 Es6
 
-  ```
+  ```javascript
   class Child extends Parent
   ```
 
@@ -47,7 +47,7 @@ Strict mode treats these mistakes as errors so that they're discovered and promp
 
 babel-plubin: https://babeljs.io/docs/plugins/transform-strict-mode/
 
-```
+```javascript
 
 'use strict';
 
@@ -59,15 +59,19 @@ delete Object.prototype; // delete undeletable properties
 function sum(a, a, c) { // !!! syntax error
   return a + b + c; // wrong if this code ran
 }
+
 ```
 
 #### 3. Implement Singleton Design Pattern
-#### 4. How to check nested objecct properties
-1) immutable.js 
-2) loadash get api
-3) You can use an utility function like this:
 
-```
+#### 4. How to check nested objecct properties
+
+* immutable.js
+* loadash get api
+* You can use an utility function like this:
+
+```javascript
+
 get = function(obj, key) {
     return key.split(".").reduce(function(o, x) {
         return (typeof o == "undefined" || o === null) ? o : o[x];
@@ -77,6 +81,26 @@ get = function(obj, key) {
 // Usage
  get(user, 'loc.lat')     // 50
  get(user, 'loc.foo.bar') // undefined
+
+```
+
+#### 5. Explain Function.prototype.call()
+
+```javascript
+
+const map = f => x => Array.prototype.map.call(x, f)
+
+const items = document.querySelectorAll('div')
+
+items.map(doSomething)
+// => Uncaught TypeError: items.map is not a function
+// document.querySelectorAll (and similar methods) do not return an Array, 
+//they return a NodeList and a NodeList does not contain a 
+// map method.
+
+// function programing
+map(doSomething)(items)
+
 ```
 
 References
