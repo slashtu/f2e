@@ -62,9 +62,37 @@ function sum(a, a, c) { // !!! syntax error
 
 #### 3. Implement Singleton Design Pattern
 
+```javascript
+var Singleton = (function () {
+    var instance;
+ 
+    function createInstance() {
+        var object = new Object("I am the instance");
+        return object;
+    }
+ 
+    return {
+        getInstance: function () {
+            if (!instance) {
+                instance = createInstance();
+            }
+            return instance;
+        }
+    };
+})();
+ 
+function run() {
+ 
+    var instance1 = Singleton.getInstance();
+    var instance2 = Singleton.getInstance();
+ 
+    alert("Same instance? " + (instance1 === instance2));  
+```
+
 ES6
 
 ```javascript
+// singleton.js
 let instance = null;
 
 class Cache{
