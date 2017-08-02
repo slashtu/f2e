@@ -143,5 +143,38 @@ items.map(doSomething)
 map(doSomething)(items)
 ```
 
+#### 6. Implement throttle and debounce
+
+```javascript
+var lib = (() => {
+  let throttleTime = 0;
+  let deounceTimer = 0;
+  return {
+    throttle: (f, t) => () => {
+       const now = new Date().getTime();
+       if(now - throttleTime > t) {
+         throttleTime = now;
+         f();
+       }
+    },
+    
+    debounce: (f, t) => () => {
+      if(deounceTimer != 0){
+        clearTimeout(deounceTimer);
+      }
+      
+      deounceTimer = setTimeout( () => {
+        deounceTimer = 0;
+        f();
+      }, t);
+    },
+  }
+})();
+
+scrollBar.on('scroll', lib.throttle(function() {
+  // do something every second
+}, 1000));
+```
+
 References
 1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
