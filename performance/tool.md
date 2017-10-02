@@ -17,3 +17,7 @@
 ####  Gtmetrix
 
 > https://gtmetrix.com/
+
+####  Tinypng
+
+> https://tinypng.com/
