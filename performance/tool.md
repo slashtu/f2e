@@ -1,3 +1,7 @@
+####  Source Map Explorer
+
+> https://github.com/danvk/source-map-explorer
+
 ####  Webpack Visualizer
 
 > https://github.com/chrisbateman/webpack-visualizer
