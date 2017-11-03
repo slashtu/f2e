@@ -1,4 +1,4 @@
-#### PWA Addy Osmani
+### PWA Addy Osmani
 
 > https://medium.com/@addyosmani
 
