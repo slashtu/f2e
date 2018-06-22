@@ -1,7 +1,9 @@
-#### Dominik Kundel: XSS, CSRF, CSP, JWT, WTF? IDK ¯\_(ツ)_/¯ | JSConf Iceland 2018
+### Dominik Kundel: XSS, CSRF, CSP, JWT, WTF? IDK ¯\_(ツ)_/¯ | JSConf Iceland 2018
 
 > https://youtu.be/c6mqdsfWdmE
 
-* JWT 
-* windows.opener
-* csrf
+  #### JWT 
+  #### windows.opener
+  #### csrf
+  #### xss - 2005 myspace samy worm
+    * inject javascript by CSS (background:url)
