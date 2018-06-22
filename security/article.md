@@ -2,8 +2,8 @@
 
 > https://youtu.be/c6mqdsfWdmE
 
-  #### JWT 
-  #### windows.opener
-  #### csrf
-  #### xss - 2005 myspace samy worm
-    * inject javascript by CSS (background:url)
+  #### 1. JWT 
+  #### 2. windows.opener
+  #### 3. csrf
+  #### 4. xss - 2005 myspace samy worm
+  * inject javascript by CSS (background:url)
