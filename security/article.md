@@ -6,4 +6,4 @@
   #### 2. windows.opener
   #### 3. csrf
   #### 4. xss - 2005 myspace samy worm
-  * inject javascript by CSS (background:url)
+  * inject javascript by CSS (background:url) and eval() function
