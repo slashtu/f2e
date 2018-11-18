@@ -176,5 +176,11 @@ scrollBar.on('scroll', lib.throttle(function() {
 }, 1000));
 ```
 
+#### 7. How do you clone an object?
+
+```javascript
+clone = JSON.parse(JSON.stringify(object))
+```
+
 References
 1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
