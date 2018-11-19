@@ -24,3 +24,9 @@ https://youtu.be/reztLS3vomE
 - Html tag `srcset`
 
 #### Lazy loading
+
+
+## CSS
+#### Size
+- https://medium.freecodecamp.org/reducing-css-bundle-size-70-by-cutting-the-class-names-and-using-scope-isolation-625440de600b
+- Renaming CSS class names at the compilation time
