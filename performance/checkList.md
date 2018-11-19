@@ -25,6 +25,8 @@ https://youtu.be/reztLS3vomE
 
 #### Lazy loading
 
+## Font
+- Flash Of Unstyled Text (FOUT) `font-display: swap`
 
 ## CSS
 #### Size
