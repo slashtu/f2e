@@ -11,8 +11,14 @@
 https://youtu.be/reztLS3vomE
 
 #### Compression
-- webpack npm `imagemin`
+- npm `imagemin`
 
 #### Format
 - Use .mp4 instead of gif
 - WebP
+
+
+#### Size
+- Toolin `sharp`, `jimp` 
+- Multiple images size
+- Html tag `srcset`
