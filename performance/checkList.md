@@ -22,3 +22,5 @@ https://youtu.be/reztLS3vomE
 - Toolin `sharp`, `jimp` 
 - Multiple images size
 - Html tag `srcset`
+
+#### Lazy loading
