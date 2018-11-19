@@ -7,7 +7,7 @@
 7. performance budget
 
 
-### Image
+## Image
 https://youtu.be/reztLS3vomE
 
 #### Compression
