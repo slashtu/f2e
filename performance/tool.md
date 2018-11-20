@@ -1,22 +1,22 @@
+####  Google WPA Lighthouse
+
+> https://developers.google.com/web/tools/lighthouse/
+
 #### Web.dev
 
 > https://web.dev/
 
-####  Source Map Explorer
+####  Webpack Bundle Analyzer
 
-> https://github.com/danvk/source-map-explorer
+> https://github.com/webpack-contrib/webpack-bundle-analyzer
 
-####  Webpack Visualizer
+#### JS and CSS coverage
 
-> https://github.com/chrisbateman/webpack-visualizer
+> https://developers.google.com/web/updates/2017/04/devtools-release-notes
 
 ####  Google Pagespeed
 
 > https://developers.google.com/speed/pagespeed/
-
-####  Google WPA Lighthouse
-
-> https://developers.google.com/web/tools/lighthouse/
 
 ####  Webpagetest
 
