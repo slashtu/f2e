@@ -1,10 +1,21 @@
-1. code splitting
-2. tree shaking 
-3. ployfills
-4. webpack bundle analyser
-5. monent.js -> date-fns which support tree shaking and smaller
-6. 3rd lib, dynamic loading
-7. performance budget
+## Javascript
+- Dynamic import
+
+- Tree shaking
+  - use `import` 
+  - `@babel/preset-env` `modules: false`
+
+- Html `preload`
+
+- Ployfills
+  - `@babel/preset-env` `useBuiltIns` `targets`
+  
+- code splitting
+
+- webpack bundle analyser
+- monent.js -> date-fns which support tree shaking and smaller
+- 3rd lib, dynamic loading
+- performance budget
 
 
 ## Image
