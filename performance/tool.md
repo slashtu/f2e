@@ -10,6 +10,10 @@
 
 > https://github.com/webpack-contrib/webpack-bundle-analyzer
 
+#### Package Size
+
+> https://bundlephobia.com/
+
 #### JS and CSS coverage
 
 > https://developers.google.com/web/updates/2017/04/devtools-release-notes
