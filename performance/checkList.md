@@ -1,5 +1,5 @@
 ## Javascript
-- Dynamic import
+- Dynamic import - React.lazy
 
 - Tree shaking
   - use `import` 
@@ -35,6 +35,10 @@ https://youtu.be/reztLS3vomE
 - Html tag `srcset`
 
 #### Lazy loading
+
+#### Tree shaking
+- only load needed icon
+- react-icons
 
 ## Font
 - Flash Of Unstyled Text (FOUT) `font-display: swap`
