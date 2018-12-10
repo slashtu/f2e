@@ -48,3 +48,11 @@ https://youtu.be/reztLS3vomE
 #### Long term caching with content hash
 - the best option is to use contenthash, which will generate a hash based on its content.
 - https://webpack.js.org/guides/caching/
+
+#### Common Bundle
+- NPM packages change less often than our app code, so we don’t need to force users to download all your NPM packages if nothing has changed. This is usually called the vendor bundle.
+
+- What about your own code that also change less often? Maybe you have a few basic components like Button, Grid, Toggle, etc. that have been created some time ago and haven't changed in a while. This is a good candidate for a common bundle
+
+#### Credit
+- https://dev.to/goenning/how-we-reduced-our-initial-jscss-size-by-67-3ac0?fbclid=IwAR0S5CwGF3B9Fk3h3MlPXMdyCMVsICYoNh8p5oUO33MokQbTjTfJ7nxkT7w
