@@ -65,9 +65,14 @@ function sum(a, a, c) { // !!! syntax error
 ```javascript
 var Singleton = (function () {
     var instance;
+    
+    function People(name) {
+      this.name = name;
+      this.sayName = function() {console.log(this.name)};
+    }
  
     function createInstance() {
-        var object = new Object("I am the instance");
+        var object = new People("Slash");
         return object;
     }
  
