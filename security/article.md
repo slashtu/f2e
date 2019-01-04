@@ -22,3 +22,14 @@
   * be careful with JSONP
   * use CSP as a safty net
   * stay up-to-date
+
+### Practical
+
+  #### Cookie
+  ```
+  Set-Cookie: key=value; SameSite=Strict
+  Set-Cookie: key=value; HttpOnly
+  Set-Cookie: <cookie-name>=<cookie-value>; Domain=<domain-value>
+  // Multiple directives are also possible, for example:
+  Set-Cookie: <cookie-name>=<cookie-value>; Domain=<domain-value>; Secure; HttpOnly
+  ```
