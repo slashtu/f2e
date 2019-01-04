@@ -24,12 +24,19 @@
   * stay up-to-date
 
 ### Practical
+  #### Https
+  ```
+   never use Http
+  ```
 
   #### Cookie
   ```
   Set-Cookie: key=value; SameSite=Strict
   Set-Cookie: key=value; HttpOnly
   Set-Cookie: <cookie-name>=<cookie-value>; Domain=<domain-value>
+  
   // Multiple directives are also possible, for example:
   Set-Cookie: <cookie-name>=<cookie-value>; Domain=<domain-value>; Secure; HttpOnly
   ```
+  
+  ### Content Security Policy
