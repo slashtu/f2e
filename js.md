@@ -52,6 +52,8 @@ babel-plubin: https://babeljs.io/docs/plugins/transform-strict-mode/
 
 mistypeVariable = 17; // accidentally create global variables
 
+Function('"use strict";console.log(this)')() // undefined, not window
+
 delete Object.prototype; // delete undeletable properties
 
 // function parameter names be unique
