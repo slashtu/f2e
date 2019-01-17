@@ -183,6 +183,35 @@ scrollBar.on('scroll', lib.throttle(function() {
 }, 1000));
 ```
 
+Mutiple
+```javascript
+function throttle(fn, time) {
+  let cb = fn;
+  let t = time
+  let throttleTime = 0;
+
+  this.getTime = function (){
+     return throttleTime;
+  }
+
+  this.do = function(fn, time) {
+     const now = new Date().getTime();
+     if (now - throttleTime > time) {
+       throttleTime = now;
+       fn();
+     
+     }
+  }
+}
+
+
+t = new throttle()
+
+for(var i = 0; i < 100000000; i++){
+    t.do(() => {console.log(new Date().getTime())}, 100)
+}
+```
+
 #### 7. How do you clone an object?
 
 ```javascript
