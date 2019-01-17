@@ -189,16 +189,12 @@ scrollBar.on('scroll', lib.throttle(function() {
 clone = JSON.parse(JSON.stringify(object))
 ```
 ```javascript
-function deepClone(object){
-	var newObject = {};
-	for(var key in object){
-		if(typeof object[key] === 'object'  && object[key] !== null ){
-		 newObject[key] = deepClone(object[key]);
-		}else{
-		 newObject[key] = object[key];
-		}
-	}
-	return newObject;
+function deepClone(o) {
+  return Object.keys(o).reduce((clone, key) => {
+    clone[key] = (typeof o[key] === 'object' && o[key] !== null) ? deepClone(o[key]) : o[key]
+
+    return clone;
+  }, {})
 }
 ```
 
