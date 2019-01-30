@@ -136,6 +136,17 @@ class Cache{
 }
 ```
 
+#### 3.2 Class with private properties
+
+```javascript
+function People(value) {
+   let age = 10;
+   
+   this.setAge = function(v) { age = v; }
+   this.getAge = function() { return age;}
+}
+```
+
 #### 4. How to check nested objecct properties
 
 * immutable.js
