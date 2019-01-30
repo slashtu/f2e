@@ -141,6 +141,7 @@ class Cache{
 ```javascript
 function People(value) {
    let age = 10;
+   age = value;
    
    this.setAge = function(v) { age = v; }
    this.getAge = function() { return age;}
