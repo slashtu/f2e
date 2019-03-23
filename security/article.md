@@ -1,4 +1,4 @@
-### Dominik Kundel: XSS, CSRF, CSP, JWT, WTF? IDK ¯\_(ツ)_/¯ | JSConf Iceland 2018
+## Dominik Kundel: XSS, CSRF, CSP, JWT, WTF? IDK ¯\_(ツ)_/¯ | JSConf Iceland 2018
 
 > https://youtu.be/c6mqdsfWdmE
 
@@ -23,7 +23,7 @@
   * use CSP as a safty net
   * stay up-to-date
 
-### Practical
+## Practical
   #### Https
   ```
    never use Http
@@ -39,4 +39,8 @@
   Set-Cookie: <cookie-name>=<cookie-value>; Domain=<domain-value>; Secure; HttpOnly
   ```
   
-  ### Content Security Policy
+  #### Content Security Policy
+  
+  
+## Express
+https://expressjs.com/en/advanced/best-practice-security.html
