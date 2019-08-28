@@ -45,15 +45,34 @@
 - [PlayCanvas](https://playcanvas.com/)
   以 web 遊戲為主要目標的遊戲引擎框架，被 [snapchat](https://www.snapchat.com/) 收購
 
-## 組件化開發庫
-- A-Frame
-    開發VR based on three.js
-- Vue-Babylon
-- React Three Fiber 
-- @sveltejs/gl
+## 元件化函式庫
+- [A-Frame](https://aframe.io)
+  開發 VR 用，based on three.js
+- [Vue-Babylon](https://github.com/Beg-in/vue-babylonjs)
+  babylon.js封裝成vue component 維護不頻繁
+- [React Three Fiber](https://github.com/drcmda/react-three-fiber)
+  three.js封裝成react component 維護頻繁
+- [@sveltejs/gl](https://github.com/Rich-Harris/svelte-gl)
+  封裝成 Svelte 元件的 WebGL API ，由 rollup 的作者開發的
+ > @sveltejs/gl 似乎已經停止開發了， Github 上沒程式碼 [name=DanSnow]
+
+## 豐富的生態
+- [Sketchfab](https://sketchfab.com/)
+    模型展示
+- [Shadertoy](https://www.shadertoy.com/)
+    著色器代碼&程序分享
+- [Poly Google](https://poly.google.com/)
+    3D藝術作品分享
+
+## 網頁圖形的未來
+
+### WebGPU
+- WebGL may be replaced with WebGPU
+- 新的 API：Metal / Vulkan / DirectX12(DX11 <-> DX12)
+- 新的著色器語言(WHLSL VS SPIR-V)
 
 
-
-
+## Atwood's Law
+- Babyl
 
 ###### tags: `MW19`
